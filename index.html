@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="card">
+    <div class="front">
+      <div class="circles">
+        <span class="circle"></span>
+        <span class="small-circle">
+      </div>
+      <div class="desc">
+        <div class="num">0000 0000 0000 0000</div>
+        <div class="info">
+          <div class="name">Jane Appleseed</div>
+          <div class="expire-date">00/00</div>
+        </div>
+      </div>
+    </div>
+    <div class="back">
+      000
+    </div>
+  </div>
+  <form action="#" novalidate>
+    <label for="name">Cardholder Name</label>
+    <input type="text" name="cardholderName" id="name" placeholder="e.g. Jane Appleseed">
+    <div class="error"></div>
+    <label for="number">Card Number</label>
+    <input type="text" name="cardNumber" id="number" placeholder="e.g. 1234 5678 9123 0000">
+    <div class="error"></div>
+    <div class="spc">
+      <div class="date">
+        <div class="label">Exp. Date (MM/YY)</div>
+        <input type="number" name="month" id="month" nmaxlength="2" placeholder="MM">
+        <input type="number" name="year" id="year" maxlength="2" placeholder="YY">
+      </div>
+      <div>
+        <label for="cvc">CVC</label>
+        <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+      </div>
+    </div>
+    <div class="num-errors">
+      <div class="error"></div>
+      <div class="error"></div>
+    </div>
+    <button>Confirm</button>
+  </form>
+  <!-- Completed state start -->
+  <div class="thanks">
+    <img src="images/icon-complete.svg" alt="">
+    <div class="header">Thank you!</div>
+    <p>We've added your card details</p>
+    <button class="continue">Continue</button>
+  </div>
+  <div class="attribution">
+    Challenge by &nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by&nbsp; <a href="https://www.frontendmentor.io/profile/Ryusuke66" target="_blank">Yassine Ghezal</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
